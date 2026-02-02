@@ -1,56 +1,42 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Student Login</title>
-  <style>
-    body {
-      font-family: Arial;
-      background: #f2f2f2;
-    }
-    .box {
-      width: 300px;
-      margin: 100px auto;
-      background: white;
-      padding: 20px;
-      text-align: center;
-      border-radius: 5px;
-    }
-    input {
-      width: 90%;
-      padding: 8px;
-      margin: 5px;
-    }
-    button {
-      padding: 8px 15px;
-    }
-  </style>
-</head>
+div class="container" id="container"> <div class="form-container sign-up">... </div> <div class="form-container sign-in">... </div> <div class="toggle-container">... </div> </div>container{
 
-<body>
-  <div class="box">
-    <h2>Student Login</h2>
+background-color: #fff;
 
-    <input type="text" id="username" placeholder="Username">
-    <input type="password" id="password" placeholder="Password">
+border-radius: 30px;
 
-    <button onclick="login()">Login</button>
+box-shadow:
 
-    <p id="result"></p>
-  </div>
+5px 15px rgba(0, 0, 0, 0.35);
 
-  <script>
-    function login() {
-      var u = document.getElementById("username").value;
-      var p = document.getElementById("password").value;
+position: relative;
 
-      if (u === "pranav" && p === "1234") {
-        document.getElementById("result").innerHTML =
-          "✅ Login Successful <br>Name: Pranav Joshi <br>Branch: Computer Engineering";
-      } else {
-        document.getElementById("result").innerHTML =
-          "❌ Invalid Username or Password";
-      }
-    }
-  </script>
-</body>
-</html># student-login-website
+overflow: hidden;
+
+width: 768px;
+
+max-width: 100%:
+
+min-height: 480px;
+
+.container p{
+
+font-size: 14px;
+
+line-height: 20px;
+
+letter-spacing: 0.3px;
+
+margin: 20px 0;
+
+container span{
+
+font-size: 12px;
+const container = document.getElementById("container");
+
+const registerBtn = document.getElementById("register");
+
+const loginBtn = document.getElementById("login");
+
+registerBtn.addEventListener("click", () { container.classList.add("active"); });
+
+loginBtn.addEventListener("click", () { container.classList.remove("active"); });
