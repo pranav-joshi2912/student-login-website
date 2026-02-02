@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Student Login</title>
+  <style>
+    body{
+      font-family: Arial;
+      background:#f2f2f2;
+    }
+    .box{
+      width:300px;
+      margin:100px auto;
+      background:white;
+      padding:20px;
+      text-align:center;
+      border-radius:5px;
+    }
+    input,button{
+      width:90%;
+      padding:8px;
+      margin:5px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="box">
+  <h2>Student Login</h2>
+
+  <input type="text" id="username" placeholder="Username">
+  <input type="password" id="password" placeholder="Password">
+  <button onclick="login()">Login</button>
+
+  <p id="result"></p>
+</div>
+
+<script>
+function login(){
+  var u = document.getElementById("username").value;
+  var p = document.getElementById("password").value;
+
+  if(u==="pranav" && p==="1234"){
+    document.getElementById("result").innerHTML =
+    "Name: Pranav Joshi<br>Email: pranav@gmail.com";
+  }else{
+    document.getElementById("result").innerHTML =
+    "Wrong Username or Password";
+  }
+}
+</script>
+
+</body>
+</html>
